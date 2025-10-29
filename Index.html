@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Star Games - Player Registration</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<header>
+    <h1>The Star Upcoming Events</h1>
+    <p>Register now and be part of the action!</p>
+</header>
+<main>
+    <p>The following games are available:</p>
+    <ol>
+        <li>Football</li>
+        <li>Table Tennis</li>
+        <li>Volleyball</li>
+        <li>Hockey</li>
+        <li>Rugby</li>
+        <li>Lawn Tennis</li>
+        <li>Chess</li>
+    </ol>
+
+    <h2>Player Registration Form</h2>
+    <form id="registrationForm" action="register.php" method="post">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="FullName" required>
+
+        <label for="Age">Age:</label>
+        <input type="number" id="Age" name="Age" min="5" max="100" required>
+
+        <label for="Email">Email:</label>
+        <input type="email" id="Email" name="Email" required>
+
+        <label for="game">Your Game:</label>
+        <select id="game" name="Game" required>
+            <option value="">Select Game</option>
+            <option value="Football">Football</option>
+            <option value="Table Tennis">Table Tennis</option>
+            <option value="Volleyball">Volleyball</option>
+            <option value="Hockey">Hockey</option>
+            <option value="Rugby">Rugby</option>
+            <option value="Lawn Tennis">Lawn Tennis</option>
+            <option value="Chess">Chess</option>
+        </select>
+
+        <label>Gender:</label>
+        <div class="gender-group">
+            <label><input type="radio" name="Gender" value="male" required> Male</label>
+            <label><input type="radio" name="Gender" value="female" required> Female</label>
+        </div>
+
+        <label for="county">County:</label>
+        <select id="county" name="County" required>
+            <option value="">Select County</option>
+            <option value="Nairobi">Nairobi</option>
+            <option value="Kiambu">Kiambu</option>
+            <option value="Machakos">Machakos</option>
+            <option value="Nyeri">Nyeri</option>
+            <option value="Meru">Meru</option>
+            <option value="Nakuru">Nakuru</option>
+        </select>
+
+        <input type="submit" value="Register">
+    </form>
+
+    <footer>
+        <p>Make sure to provide correct details during registration.<br />
+             Dates for the competition will be communicated later.</p>
+        <p>📍 Jomo Kenyatta University of Agriculture and Technology</p>
+        <p>📞 For more info: Noel - 0751412323</p>
+    </footer>
+</main>
+</body>
+</html>
